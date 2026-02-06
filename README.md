@@ -34,7 +34,6 @@ The table below reports **average performance over all evaluation episodes**.
 | **Avg. Battery Level** | 0.85 | 0.62 | **0.78** | Normalized (higher is better) |
 | **Queue Dispersion** | 12.4 | 8.1 | **4.2** | Std across 10 GS (lower is better) |
 
----
 
 ### 2. Metric Interpretation
 
@@ -42,7 +41,6 @@ The table below reports **average performance over all evaluation episodes**.
 - **Average AoI (GS)**  
 - **Queue Dispersion**
 - **Average Battery Level**  
----
 
 ### 3. Baseline Behavior Analysis
 
