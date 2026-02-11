@@ -28,18 +28,18 @@ The table below reports **average performance over all evaluation episodes**.
 
 | Metric | **Random** | **Distance-Greedy** | **DQN (Ours)** | Unit / Notes |
 |:---|:---:|:---:|:---:|:---|
-| **Mean Return** | -124.5 ± 12.1 | -85.2 ± 8.4 | **-42.8 ± 3.2** | Higher is better |
-| **Avg. AoI (GS)** | 145.2 | 98.4 | **62.1** | Minutes (lower is better) |
-| **Avg. Battery Level** | 0.85 | 0.62 | **0.78** | Normalized (higher is better) |
-| **Queue Dispersion** | 12.4 | 8.1 | **4.2** | Std across 10 GS (lower is better) |
+| **Mean Return** | -760.12 ± 29.5 | 281.18 ± 0.3 | **1304.74 ± 11.2** | Higher is better |
+| **Avg. AoI (GS)** | ~712.4 | ~548.2 | **~124.6** | Minutes (lower is better) |
+| **Avg. Battery Level** | 0.91 | 0.96 | **0.87** | Normalized (higher is better) |
+| **Queue Dispersion** | 38.42 | 24.15 | **12.58** | Std across 10 GS (lower is better) |
 
 
 ### 2) Metric Interpretation
 
-- **Mean Return**  
-- **Average AoI (GS)**  
-- **Queue Dispersion**
-- **Average Battery Level**  
+- **Mean Return**: The cumulative scalar reward reflecting the agent's ability to balance data freshness, load balancing, and energy conservation. 
+- **Average AoI (GS)**:  Represents the average "age" of data across all 10 ground stations. 
+- **Queue Dispersion**: The standard deviation of data stored in GS queues. Lower dispersion signifies successful load balancing, preventing localized bottlenecks.
+- **Average Battery Level**: The normalized remaining energy of the satellite. It evaluates the operational sustainability of the downlink policy under power constraints.
 
 ### 3) Baseline Behavior Analysis
 
